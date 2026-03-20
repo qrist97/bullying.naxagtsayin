@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <title>Իրական Պատմություններ - Բուլինգի Դեմ Պայքար</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ավելացված է ցուցադրության համար, եթե style.css ֆայլը չկա */
+        body { font-family: sans-serif; background-color: #f4f4f9; }
+        
+        /* Հիմնական կոնտեյների ոճը */
+        .story-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+            
+            /* Միացնում ենք flexbox */
+            display: flex;
+            align-items: flex-start; /* Տեքստը սկսվում է վերևից */
+            gap: 20px; /* Հեռավորություն նկարի և տեքստի միջև */
+        }
+
+        /* Ձախ կողմի բլոկը (նկարի համար) */
+        .story-img-container {
+            flex-shrink: 0; /* Թույլ չտալ նկարին սեղմվել */
+        }
+
+        /* Նկարի ոճը */
+        .story-card img {
+            width: auto; /* Պահպանել համամասնությունը */
+            /* max-height: 300px;  Մոտավորապես 10-15 տողի բարձրություն */
+            object-fit: cover; /* Եթե չափսերը փոխվեն, նկարը չձգվի */
+            border-radius: 10px; /* Փոքր կլորացում սիրունության համար */
+        }
+
+        /* Աջ կողմի բլոկը (տեքստի համար) */
+        .story-content {
+            flex-grow: 1; /* Տեքստը զբաղեցնում է մնացած տեղը */
+        }
+
+        /* Հեռացնում ենք վերևի մարժինները վերնագրից և տեքստից, որ հավասարվեն նկարին */
+        .story-content h3 { margin-top: 0; }
+        .story-content p:last-child { margin-bottom: 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Բուլինգ. Ճանաչենք և Կանխարգելենք</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Գլխավոր</a></li>
+                <li><a href="physical.html">Ֆիզիկական</a></li>
+                <li><a href="psychological.html">Հոգեբանական</a></li>
+                <li><a href="cyber.html">Կիբեռբուլինգ</a></li>
+                <li><a href="consequences.html">Հետևանքներ</a></li>
+                <li><a href="prevention.html">Կանխարգելում</a></li>
+                <li><a href="stories.html">Պատմություններ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h2>Աշխարհահռչակ մարդկանց հաղթանակի պատմությունները</h2>
+        <p>Այս մարդիկ ապացուցել են, որ շրջապատի ծաղրն ու հալածանքը չեն կարող կանգնեցնել իրական տաղանդն ու կամքի ուժը:</p>
+
+        <section class="stories-container">
+            
+            <div class="story-card" style="border-left: 6px solid #6c5ce7;">
+                <div class="story-img-container">
+                    <img src="18.jpg" alt="Ալբերտ Էյնշտեյն" style="max-height: 300px;">
+                </div>
+                <div class="story-content">
+                    <h3>Ալբերտ Էյնշտեյն. «Անհույս» աշակերտը</h3>
+                    <p>Դպրոցում ուսուցիչները նրան համարում էին դանդաղաշարժ և անընդունակ, քանի որ նա ուշ սկսեց խոսել և չէր սիրում անգիր անել դասերը: Նրան ասում էին, որ նրանից երբեք մարդ չի դառնա:</p>
+                    <p>Դպրոցում ուսուցիչները նրան համարում էին դանդաղաշարժ և անընդունակ, քանի որ նա ուշ սկսեց խոսել և չէր սիրում անգիր անել դասերը: Նրան ասում էին, որ նրանից երբեք մարդ չի դառնա:</p>
+                    <p><strong>Արդյունքը.</strong> Նա դարձավ պատմության ամենահայտնի ֆիզիկոսը և փոխեց մեր պատկերացումները տիեզերքի մասին:</p>
+                </div>
+            </div>
+
+            <div class="story-card" style="border-left: 6px solid #55efc4;">
+                <div class="story-img-container">
+                    <img src="19.jpg" alt="Իլոն Մասկ" style="max-height: 300px;">
+                </div>
+                <div class="story-content">
+                    <h3>Իլոն Մասկ. Գիտելիքի ուժը</h3>
+                    <p>Tesla-ի և SpaceX-ի հիմնադիրը մանկության տարիներին ենթարկվել է դաժան բուլինգի: Նրան հալածում էին, քանի որ նա լռակյաց էր և սիրում էր գրքեր կարդալ: Մի անգամ նրան նույնիսկ աստիճաններից այնքան ուժեղ են հրել, որ նա տեղափոխվել է հիվանդանոց:</p>
+                    <p>Tesla-ի և SpaceX-ի հիմնադիրը մանկության տարիներին ենթարկվել է դաժան բուլինգի: Նրան հալածում էին, քանի որ նա լռակյաց էր և սիրում էր գրքեր կարդալ:</p>
+                    <p><strong>Արդյունքը.</strong> Իլոնն իր ողջ ուժը ներդրեց գիտության մեջ և այսօր փոխում է մարդկության ապագան:</p>
+                </div>
+            </div>
+
+            <div class="story-card" style="border-left: 6px solid #0984e3;">
+                <div class="story-img-container">
+                    <img src="20.jpg" alt="Լեդի Գագա" style="max-height: 300px;">
+                </div>
+                <div class="story-content">
+                    <h3>Լեդի Գագա. «Դու երբեք հայտնի չես դառնա»</h3>
+                    <p>Դպրոցում Լեդի Գագայի դասընկերները հատուկ խումբ էին բացել սոցցանցերում՝ ծաղրելով նրա երազանքները: Նրան անվանում էին «խոշոր քիթ» և ասում, որ նա տաղանդ չունի:</p>
+                    <p>Դպրոցում Լեդի Գագայի դասընկերները հատուկ խումբ էին բացել սոցցանցերում՝ ծաղրելով նրա երազանքները: Նրան անվանում էին «խոշոր քիթ»:</p>
+                    <p><strong>Արդյունքը.</strong> Նա դարձավ համաշխարհային աստղ և այսօր օգնում է միլիոնավոր երիտասարդների՝ հավատալ սեփական ուժերին:</p>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p style="text-align: center; padding: 20px; color: #636e72;">&copy; 2026 Դպրոցական Նախագիծ</p>
+    </footer>
+</body>
+</html>
