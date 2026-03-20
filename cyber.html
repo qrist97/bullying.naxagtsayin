@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <title>Կիբեռբուլինգ - Բուլինգի Դեմ Պայքար</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ավելացրել եմ այս ոճերը հստակության համար */
+        .img-left {
+            float: left;
+            width: 250px; /* Կարող եք փոփոխել չափը */
+            margin-right: 20px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+        .img-right {
+            float: right;
+            width: 250px; /* Կարող եք փոփոխել չափը */
+            margin-left: 20px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+        /* Մաքրում ենք float-ը, որպեսզի հաջորդ բաժինները չխառնվեն */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Բուլինգ. Ճանաչենք և Կանխարգելենք</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Գլխավոր</a></li>
+                <li><a href="physical.html">Ֆիզիկական</a></li>
+                <li><a href="psychological.html">Հոգեբանական</a></li>
+                <li><a href="cyber.html">Կիբեռբուլինգ</a></li>
+                <li><a href="consequences.html">Հետևանքներ</a></li>
+                <li><a href="prevention.html">Կանխարգելում</a></li>
+                <li><a href="stories.html">Պատմություններ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h2>Կիբեռբուլինգ (Թվային հալածանք)</h2>
+        <p>Կիբեռբուլինգը բուլինգի տեսակ է, որն իրականացվում է թվային տեխնոլոգիաների միջոցով։ Այն կարող է տեղի ունենալ սոցիալական ցանցերում, խաղային հարթակներում և հեռախոսների միջոցով։</p>
+
+        <section>
+            <img src="13․jpg" alt="Կիբեռբուլինգի օրինակ" class="img-left">
+            <h3>Ինչո՞վ է այն տարբերվում սովորական բուլինգից</h3>
+            <ul>
+                <li><strong>Անանունություն.</strong> Հալածողը կարող է թաքնվել կեղծ հաշիվների հետևում:</li>
+                <li><strong>Մշտական ներկայություն.</strong> Այն չի սահմանափակվում դպրոցով. զոհը կարող է հալածվել օրը 24 ժամ:</li>
+                <li><strong>Արագ տարածում.</strong> Վիրավորական նյութերը վայրկյանների ընթացքում հասնում են մեծ լսարանի:</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Կիբեռբուլինգի հիմնական ձևերը</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <div style="border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
+                    <strong>Ֆլեյմինգ</strong><br>Առցանց վիճաբանություն և վիրավորանքներ:
+                </div>
+                <div style="border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
+                    <strong>Հարասմենթ</strong><br>Պարբերաբար սպառնալից նամակների ուղարկում:
+                </div>
+                <div style="border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
+                    <strong>Դիքսինգ</strong><br>Անձնական տվյալների հրապարակում առանց թույլտվության:
+                </div>
+                <div style="border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
+                    <strong>Ֆեյք էջեր</strong><br>Ուրիշի անունից կեղծ հաշիվների ստեղծում:
+                </div>
+            </div>
+        </section>
+
+        <section style="background-color: #e8f4fd; padding: 20px; border-radius: 10px; margin-top: 20px; border-left: 6px solid #2980b9;">
+            <img src="10․jpg" alt="Ինչպես վարվել" class="img-right">
+            <h3>Ինչպե՞ս վարվել (Stop, Block, Tell)</h3>
+
+            <p>Եթե դարձել ես կիբեռբուլինգի թիրախ.</p>
+            <ol>
+                <li><strong>Մի՛ պատասխանիր.</strong> Քո արձագանքը միայն ոգևորում է հալածողին:</li>
+                <li><strong>Արգելափակիր.</strong> Օգտագործիր "Block" և "Report" կոճակները:</li>
+                <li><strong>Պահպանիր ապացույցները.</strong> Արիր էկրանի լուսանկարներ (screenshots):</li>
+                <li><strong>Պատմիր մեծահասակներին.</strong> Դիմիր ծնողներիդ կամ ուսուցիչներիդ:</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p style="text-align: center; padding: 20px; color: #777;">&copy; 2026 Դպրոցական Նախագիծ</p>
+    </footer>
+</body>
+</html>
